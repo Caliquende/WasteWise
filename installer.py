@@ -13,10 +13,10 @@ from tkinter import filedialog, messagebox
 
 LOG_FILENAME = "wastewisely_installer_debug.log"
 LOG_FORMAT = "%(asctime)s - %(levelname)s - %(message)s"
-EVENT_SOURCE = "WasteWiselylyInstaller"
-APP_NAME = "WasteWiselyly"
-APP_EXE_NAME = "WasteWiselyly.exe"
-SHORTCUT_NAME = "WasteWiselyly.lnk"
+EVENT_SOURCE = "WasteWiselyInstaller"
+APP_NAME = "WasteWisely"
+APP_EXE_NAME = "WasteWisely.exe"
+SHORTCUT_NAME = "WasteWisely.lnk"
 import subprocess
 
 
