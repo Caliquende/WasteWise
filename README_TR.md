@@ -1,5 +1,7 @@
 # 🗑️ WasteWisely — Profesyonel Dijital Atık Denetçisi
 
+![WasteWisely Header](assets/header.png)
+
 WasteWisely, "dijital atıkları" tespit etmek ve temizlemek için tasarlanmış yüksek performanslı bir Windows masaüstü uygulamasıdır. Sadece geçici dosyaları silmekle kalmaz; yazılım geliştirme kalıntılarını, hassas veri sızıntılarını ve bayatlamış büyük dosyaları akıllıca sınıflandırır.
 
 [🇺🇸 Click for English documentation (README.md)](README.md)

@@ -1,5 +1,7 @@
 # 🗑️ WasteWisely — Professional Digital Waste Auditor
 
+![WasteWisely Header](assets/header.png)
+
 WasteWisely is a high-performance Windows desktop application designed to identify and clean "digital waste." It goes beyond simple temp file cleaning by intelligently classifying development bloat, sensitive data leaks, and stale project files.
 
 [🇹🇷 Türkçe dökümantasyon için tıklayın (README_TR.md)](README_TR.md)

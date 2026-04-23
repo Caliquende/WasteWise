@@ -10,6 +10,8 @@
 !tests/**
 !installer.py
 !build.py
+!assets/
+!assets/**
 
 # Allow essential project metadata (not in user list but required for GitHub/pip)
 !README.md
