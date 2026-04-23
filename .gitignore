@@ -1,27 +1,27 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
+# Ignore EVERYTHING
+*
+
+# Allow the specific folders and files
+!src/
+!src/**
+!frontend/
+!frontend/**
+!tests/
+!tests/**
+!installer.py
+!build.py
+
+# Allow essential project metadata (not in user list but required for GitHub/pip)
+!README.md
+!README_TR.md
+!requirements.txt
+!.gitignore
+!HOW_TO_USE.md
+
+# Re-ignore Python junk inside unignored folders
+**/__pycache__/
+**/*.py[cod]
+**/*.log
 build/
 dist/
-*.egg-info/
-.env
-.venv
-venv/
 *.spec
-*.log
-
-# Junk / Temp folders
-tmp_*/
-.agent/
-.sixth/
-.tempmediaStorage/
-scratch/
-bugs/
-scripts/
-
-# Explicitly allow these (everything else is ignored if you want a clean slate)
-# But for now we just ignore the noise
