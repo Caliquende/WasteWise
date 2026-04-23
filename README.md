@@ -82,4 +82,6 @@ WasteWisely/
 ---
 
 ## 🤝 Contributing
-Feel free to open issues or submit PRs. This project follows strict QA standards (audited by Software Consulting Agent Company).
+Feel free to open issues or submit PRs. This project follows strict QA standards (audited by Can as a Software QA Engineer).
+
+Waiting references on [LinkedIn](https://www.linkedin.com/in/hamdi-can-ernalbanto%C4%9Fullar%C4%B1/)

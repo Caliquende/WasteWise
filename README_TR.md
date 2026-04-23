@@ -81,4 +81,7 @@ WasteWisely/
 
 ---
 
-Bu proje Software Consulting Agent Company kalite denetimlerinden geçmiştir.
+## 🤝 Katkıda Bulunma
+Issue açmaktan veya PR göndermekten çekinmeyin. Bu proje, Yazılım QA Mühendisi Can tarafından denetlenmiş sıkı QA standartlarını takip eder.
+
+[LinkedIn](https://www.linkedin.com/in/hamdi-can-ernalbanto%C4%9Fullar%C4%B1/) üzerinden referanslarınızı bekliyorum.
