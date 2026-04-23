@@ -27,6 +27,10 @@ WasteWisely is a high-performance Windows desktop application designed to identi
 - **Safe Installation:** Automatically detects and stops running instances of WasteWisely before updates or uninstallation to prevent file locking errors.
 - **Isolated Logging:** Logs are stored in `%TEMP%\WasteWisely` to avoid permission issues.
 
+### ⚡ Smart Actions
+- **Safe Archival:** Instead of direct deletion, archive folders into compressed ZIPs in a hidden `.wastewise_archive` directory. Perfect for "I might need this later" scenarios.
+- **Direct Purge:** One-click permanent deletion for verified junk.
+
 ---
 
 ## 💻 Installation

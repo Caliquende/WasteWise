@@ -27,6 +27,10 @@ WasteWisely, "dijital atıkları" tespit etmek ve temizlemek için tasarlanmış
 - **Güvenli Kurulum:** Güncelleme veya kaldırma sırasında çalışan WasteWisely süreçlerini otomatik tespit eder ve sonlandırır.
 - **İzole Loglama:** Yetki hatalarını önlemek için loglar `%TEMP%\WasteWisely` dizininde tutulur.
 
+### ⚡ Akıllı Aksiyonlar
+- **Güvenli Arşivleme:** Doğrudan silmek yerine, dosyaları gizli bir `.wastewise_archive` dizini içinde ZIP olarak saklayın. "Ya lazım olursa?" durumları için idealdir.
+- **Kalıcı Temizlik:** Doğrulanmış çöpler için tek tıkla kalıcı silme.
+
 ---
 
 ## 💻 Kurulum
