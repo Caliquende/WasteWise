@@ -1,4 +1,4 @@
-# 🗑️ WasteWisely — Professional Digital Waste Auditor
+# WasteWisely - Professional Digital Waste Auditor
 
 ![WasteWisely Header](assets/header.png)
 
@@ -8,32 +8,40 @@ WasteWisely is a high-performance Windows desktop application designed to identi
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-### 🚀 Performance & UI
+### Performance and UI
 - **Offline-First Desktop App:** Built with Python & FastAPI, wrapped in a native `pywebview` window.
 - **Native Windows Dialogs:** Integration with system folder pickers for a seamless experience.
 - **Dynamic Dashboard:** Real-time data visualization using Donut charts and interactive Treemaps.
 - **Multi-Language Support:** Fully localized in English, Turkish, and Arabic (RTL support).
 
-### 🔍 Intelligent Scanning
+### Intelligent Scanning
 - **Heavy Dependencies:** Detects massive `node_modules`, `.venv`, and build directories.
 - **Sensitive Leaks:** Scans for exposed `.env`, private keys, and credentials.
 - **Smart Staleness Filter:** Large files (>500MB) are only flagged if untouched for 90+ days to avoid deleting active work.
 - **System Protection:** Automatically excludes critical Windows system files (`pagefile.sys`, etc.).
 
-### 🛡️ Professional Deployment
+### Professional Deployment
 - **UAC Elevation:** The installer requests administrative privileges to manage `C:\Program Files`.
 - **Safe Installation:** Automatically detects and stops running instances of WasteWisely before updates or uninstallation to prevent file locking errors.
 - **Isolated Logging:** Logs are stored in `%TEMP%\WasteWisely` to avoid permission issues.
 
-### ⚡ Smart Actions
+### Smart Actions
 - **Safe Archival:** Instead of direct deletion, archive folders into compressed ZIPs in a hidden `.wastewise_archive` directory. Perfect for "I might need this later" scenarios.
 - **Direct Purge:** One-click permanent deletion for verified junk.
 
 ---
 
-## 💻 Installation
+## Requirements
+
+- Windows recommended for the full desktop and installer flow
+- Python 3.9+
+- `pip`
+
+Runtime dependencies are listed in `requirements.txt`. Canonical package metadata and optional extras are listed in `pyproject.toml`.
+
+## Installation
 
 ### 1. Pre-built Installer (Recommended)
 Download and run the `WasteWisely_Installer.exe` from the latest release.
@@ -43,12 +51,19 @@ Download and run the `WasteWisely_Installer.exe` from the latest release.
 git clone https://github.com/Caliquende/WasteWisely.git
 cd WasteWisely
 pip install -r requirements.txt
-pip install -r requirements-build.txt
 ```
 
 ---
 
-## 🛠️ Usage
+## Build Dependencies
+
+For packaging and installer work, use the build extras from `pyproject.toml`:
+
+```bash
+pip install ".[build]"
+```
+
+## Usage
 
 ### Desktop Application
 Launch via the desktop shortcut or:
@@ -69,7 +84,7 @@ python src/main.py daemon C:\Downloads
 
 ---
 
-## 📁 Project Architecture
+## Project Architecture
 
 ```
 WasteWisely/
@@ -91,3 +106,12 @@ WasteWisely/
 Feel free to open issues or submit PRs. This project follows strict QA standards (audited by Can as a Software QA Engineer).
 
 Waiting references on [LinkedIn](https://www.linkedin.com/in/hamdi-can-ernalbanto%C4%9Fullar%C4%B1/)
+
+## Validation
+
+```bash
+pytest
+python src/main.py scan .
+```
+
+Before packaging, also validate the Windows desktop flow and installer update/uninstall behavior.

@@ -71,7 +71,7 @@ except ImportError:
 
 if missing:
     print(f"[!] Missing build dependencies: {', '.join(missing)}")
-    print("[!] Install them with: pip install -r requirements-build.txt")
+    print('[!] Install them with: pip install ".[build]"')
     sys.exit(1)
 
 pyinstaller_cmd = [
