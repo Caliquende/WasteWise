@@ -20,6 +20,9 @@
 !pyproject.toml
 !.gitignore
 !HOW_TO_USE.md
+!.github/
+!.github/**
+
 
 # Re-ignore Python junk inside unignored folders
 **/__pycache__/
